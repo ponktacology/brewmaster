@@ -1,0 +1,6 @@
+name: BrewMaster
+version: ${project.version}
+main: me.ponktacology.brewmaster.BrewMaster
+author: ponktacology
+commands:
+  brewereggs:

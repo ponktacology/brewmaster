@@ -57,6 +57,12 @@ public class BrewerEggInteractListener implements Listener {
             return;
         }
 
+        if (item.getAmount() == 1) {
+            player.setItemInHand(null);
+        } else {
+            item.setAmount(item.getAmount() - 1);
+        }
+
         brewerHelper.spawnBrewer(event.getClickedBlock().getLocation().add(0, 1, 0), brewerType);
     }
 }
